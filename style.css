@@ -2,3 +2,11 @@ body {
 	max-width:600px;
 	margin:auto;
 }
+
+h1 {
+	font-family: 'Big Shoulders Text';
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+}
