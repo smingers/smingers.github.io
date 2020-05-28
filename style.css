@@ -1,34 +1,21 @@
 body {
 	max-width:600px;
 	margin:auto;
+	letter-spacing: .03em;
+	line-height: 1.7;
+	font-size: 16px;
 }
 
 h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
 	color: #b65865;
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-h2 span {
-	color: white;
-	background-color: #b65865;
-	padding: 3px;
-}
-
-h3 span {
-	color: white;
-	background-color: #b65865;
-	padding: 3px;
-}
-
-h4 span {
-	color: white;
-	background-color: #b65865;
-	padding: 3px;
-}
 
 p, li, table {
 	font-family: 'IBM Plex Serif', serif;
@@ -36,24 +23,89 @@ p, li, table {
 
 a:link {
   color: #424242;
+  text-decoration: none;
+  border-bottom: 2px solid #9b9b9b;
+  transition: ease-out 100ms;
+  padding: 0 4px;
 }
+
+a:hover {
+	color: #b65865;
+	font-weight: 600;
+	text-decoration: none;
+	border-bottom: 2px solid #b65865;
+  }
+
+
+a:focus {
+	color: white;
+	background-color: #b65865;
+	outline: none;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	padding: 0  4px;
+  }
 
 a:visited {
   color: #737373;
 }
 
 .block-highlight {
-	font-famaily: 'IBM Plex Serif', serif;
-	font-weight: light;
-	font-size: 18px;
+	font-family: 'IBM Plex Serif', serif;
+	font-weight: 300;
+	font-size: 1.25em;
 	background-color: #ffebe1;
-	padding: 12px;
+	padding: 1.15em 2em;
+	line-height: 1.5;
 }
 
 .block-regular {
-	margin-bottom: 24px
+	font-weight: 300;
+	line-height: 1.4;
+	margin-bottom: 1em;
 }
 
 #avatar {
 	padding-top: 56px;
 }
+
+
+.cutout-heading  {
+	color: white;
+	letter-spacing: .05em;
+	background-color: #b65865;
+	margin-bottom: 10px;
+	padding: 4px 8px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.footer {
+    height: 20px;
+    width: 100%;
+    background-color: thistle;
+    position: absolute;
+    left: 0;
+    margin-top: 4em;
+}
+
+.tldr {
+	color: #b65865;
+	font-weight: 600;
+}
+
+ol {
+	list-style: none;
+	counter-reset: tldr-numbers;
+	font-size: 24px;
+  }
+  ol li {
+	counter-increment: tldr-numbers;
+	margin-bottom: 10px;
+  }
+  ol li::before {
+	content: counter(tldr-numbers) ". ";
+	color: #b65865;
+	font-weight: 600;
+  }
+  
