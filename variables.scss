@@ -1,0 +1,31 @@
+//VARIABLES//
+
+
+//COLORS AS TONES
+//Colors without a11y info are a11y with black and $gray
+
+$rust: #B65865; //Rust, a11y with white
+$peach-light: #ffd6c3; //Lightest peach
+$gray: #545454; //a11y with white
+
+$lilac: #dcadc5; //Lilac, a11y with black only
+$peach: #ffd6c3; //Peach
+
+//COLORS AS USAGE
+
+$clr-primary: $rust;
+$clr-seconary: $gray;
+$clr-bg: $peach-light;
+
+
+//FONTS//
+
+$sans: 'Montserrat', sans-serif;
+$serif: 'IBM Plex Serif', serif;
+
+//TYPE SCALE - PERFECT 4th
+$xs: .75em; // 14px
+$base: 1em; // 16px
+$m: 1.333em; // 21.33px
+$l: 1.777em; // 28.43px
+$xl: 2.269em; // 37.90px
