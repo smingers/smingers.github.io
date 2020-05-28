@@ -24,5 +24,7 @@ p, li, table {
 .block {
 	font-famaily: 'IBM Plex Serif', serif;
 	font-weight: light;
+	size: 14px;
 	background-color: #ffebe1;
+	padding: 3px;
 }
