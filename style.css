@@ -4,7 +4,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Big Shoulders Text';
+	font-family: 'Proxima Nova';
+	color: #b65865;
 }
 
 p, li, table {
