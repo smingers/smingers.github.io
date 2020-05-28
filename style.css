@@ -42,12 +42,16 @@ a:visited {
   color: #737373;
 }
 
-.block {
+.block-highlight {
 	font-famaily: 'IBM Plex Serif', serif;
 	font-weight: light;
 	font-size: 18px;
 	background-color: #ffebe1;
 	padding: 12px;
+}
+
+.block-regular {
+	margin-bottom: 12px
 }
 
 #avatar {
