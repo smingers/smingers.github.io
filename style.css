@@ -3,16 +3,21 @@ body {
 	margin:auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
 	font-family: 'Proxima Nova', sans-serif;
 	color: #b65865;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: 'Proxima Nova', sans-serif;
+	background-color: #b65865;
 }
 
 p, li, table {
 	font-family: 'IBM Plex Serif', serif;
 }
 
-block {
+.block {
 	font-famaily: 'IBM Plex Serif', serif;
 	font-weight: light;
 	background-color: #ffebe1;
