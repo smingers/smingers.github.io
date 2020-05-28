@@ -21,6 +21,14 @@ p, li, table {
 	font-family: 'IBM Plex Serif', serif;
 }
 
+a:link {
+  color: #424242;
+}
+
+a:visited {
+  color: #737373;
+}
+
 .block {
 	font-famaily: 'IBM Plex Serif', serif;
 	font-weight: light;
