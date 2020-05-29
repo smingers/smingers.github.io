@@ -56,6 +56,10 @@ a:visited:hover {
 	color: #b65865;
 }
 
+a:active {
+	color: #424242;
+}
+
 .block-highlight {
 	font-family: 'IBM Plex Serif', serif;
 	font-weight: 300;
