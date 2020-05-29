@@ -52,9 +52,7 @@ a:visited {
 a:visited:focus-within {
 	color: white;
 }
-a:visited:hover {
-	color: white;
-}
+
 a:visited:active {
 	color: white;
 }
