@@ -37,7 +37,7 @@ a:hover {
   }
 
 
-a:focus {
+a:focus-within {
 	color: white;
 	background-color: #b65865;
 	outline: none;
@@ -49,15 +49,21 @@ a:focus {
 a:visited {
   color: #737373;
 }
-a:visited:focus {
+a:visited:focus-within {
 	color: white;
 }
 a:visited:hover {
-	color: #b65865;
+	color: white;
+}
+a:visited:active {
+	color: white;
 }
 
 a:active {
 	color: #424242;
+}
+a:active:hover {
+	color: #b65865;
 }
 
 .block-highlight {
