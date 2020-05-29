@@ -49,6 +49,12 @@ a:focus {
 a:visited {
   color: #737373;
 }
+a:visited:focus {
+	color: white;
+}
+a:visited:hover {
+	color: #b65865;
+}
 
 .block-highlight {
 	font-family: 'IBM Plex Serif', serif;
