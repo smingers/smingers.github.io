@@ -146,32 +146,23 @@ ol {
    =========================================== */
 
 .manifesto {
-	margin: 2.5em 0 3em;
-	padding-left: 1.5em;
-	position: relative;
-}
-
-.manifesto::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 4px;
-	height: 100%;
-	background: linear-gradient(180deg, var(--rose) 0%, var(--rose-muted) 100%);
-	border-radius: 2px;
-}
-
-.manifesto p {
-	font-size: 1.35em;
-	line-height: 1.55;
+	margin: 2em 0 2.5em;
+	font-size: 1.5em;
+	line-height: 1.5;
 	font-weight: 300;
+	font-style: italic;
 	color: var(--text-primary);
-	margin: 0 0 1.25em;
 }
 
-.manifesto p:last-child {
-	margin-bottom: 0;
+.manifesto::first-letter {
+	float: left;
+	font-size: 3.6em;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 0.75;
+	padding-right: 0.12em;
+	padding-top: 0.08em;
+	color: var(--rose);
 }
 
 /* ===========================================
@@ -229,13 +220,27 @@ ol {
    =========================================== */
 
 .elsewhere-grid {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5em 1.5em;
 	margin-top: 1em;
+	columns: 2;
+	column-gap: 2em;
 }
 
 .elsewhere-grid a {
+	display: block;
 	font-family: 'IBM Plex Serif', serif;
+	padding: 0.6em 0;
+	border-bottom: 1px solid transparent;
+}
+
+.elsewhere-grid a::after {
+	content: ' \2192';
+	color: var(--rose-muted);
+	transition: color 150ms ease, transform 150ms ease;
+	display: inline-block;
+}
+
+.elsewhere-grid a:hover::after {
+	color: var(--rose);
+	transform: translateX(4px);
 }
   
