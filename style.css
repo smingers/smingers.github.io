@@ -49,6 +49,11 @@ a:focus-within {
 a:visited {
   color: #737373;
 }
+
+a:visited:hover {
+  color: #b65865;
+}
+
 a:visited:focus-within {
 	color: white;
 }
