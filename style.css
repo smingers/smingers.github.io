@@ -1,15 +1,28 @@
+:root {
+	--rose: #b65865;
+	--rose-light: #ffebe1;
+	--rose-muted: #d4949c;
+	--text-primary: #2a2a2a;
+	--text-secondary: #424242;
+	--text-muted: #737373;
+	--bg-warm: #faf8f6;
+}
+
 body {
-	max-width:600px;
-	margin:auto;
+	max-width: 680px;
+	margin: auto;
 	letter-spacing: .03em;
 	line-height: 1.7;
-	font-size: 16px;
+	font-size: 17px;
+	color: var(--text-primary);
+	background: var(--bg-warm);
+	padding: 0 24px 80px;
 }
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	color: #b65865;
+	color: var(--rose);
 }
 
 h2, h3, h4, h5, h6 {
@@ -22,7 +35,7 @@ p, li, table {
 }
 
 a:link {
-  color: #424242;
+  color: var(--text-secondary);
   text-decoration: none;
   border-bottom: 2px solid #9b9b9b;
   transition: ease-out 100ms;
@@ -30,16 +43,16 @@ a:link {
 }
 
 a:hover {
-	color: #b65865;
+	color: var(--rose);
 	font-weight: 600;
 	text-decoration: none;
-	border-bottom: 2px solid #b65865;
+	border-bottom: 2px solid var(--rose);
   }
 
 
 a:focus-within {
 	color: white;
-	background-color: #b65865;
+	background-color: var(--rose);
 	outline: none;
 	text-decoration: none;
 	border-bottom: 2px solid transparent;
@@ -47,11 +60,11 @@ a:focus-within {
   }
 
 a:visited {
-  color: #737373;
+  color: var(--text-muted);
 }
 
 a:visited:hover {
-  color: #b65865;
+  color: var(--rose);
 }
 
 a:visited:focus-within {
@@ -63,17 +76,17 @@ a:visited:active {
 }
 
 a:active {
-	color: #424242;
+	color: var(--text-secondary);
 }
 a:active:hover {
-	color: #b65865;
+	color: var(--rose);
 }
 
 .block-highlight {
 	font-family: 'IBM Plex Serif', serif;
 	font-weight: 300;
 	font-size: 1.25em;
-	background-color: #ffebe1;
+	background-color: var(--rose-light);
 	padding: 1.15em 2em;
 	line-height: 1.5;
 }
@@ -92,7 +105,7 @@ a:active:hover {
 .cutout-heading  {
 	color: white;
 	letter-spacing: .05em;
-	background-color: #b65865;
+	background-color: var(--rose);
 	margin-bottom: 10px;
 	padding: 4px 8px;
 	text-transform: uppercase;
@@ -109,7 +122,7 @@ a:active:hover {
 }
 
 .tldr {
-	color: #b65865;
+	color: var(--rose);
 	font-weight: 600;
 }
 
@@ -124,7 +137,105 @@ ol {
   }
   ol li::before {
 	content: counter(tldr-numbers) ". ";
-	color: #b65865;
+	color: var(--rose);
 	font-weight: 600;
   }
+
+/* ===========================================
+   MANIFESTO / WHAT I BELIEVE SECTION
+   =========================================== */
+
+.manifesto {
+	margin: 2.5em 0 3em;
+	padding-left: 1.5em;
+	position: relative;
+}
+
+.manifesto::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4px;
+	height: 100%;
+	background: linear-gradient(180deg, var(--rose) 0%, var(--rose-muted) 100%);
+	border-radius: 2px;
+}
+
+.manifesto p {
+	font-size: 1.35em;
+	line-height: 1.55;
+	font-weight: 300;
+	color: var(--text-primary);
+	margin: 0 0 1.25em;
+}
+
+.manifesto p:last-child {
+	margin-bottom: 0;
+}
+
+/* ===========================================
+   PROJECTS CARDS
+   =========================================== */
+
+.projects-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+	margin-top: 1em;
+}
+
+.project-card {
+	background: white;
+	border: 1px solid #e8e4e1;
+	border-radius: 6px;
+	padding: 1.5em;
+	transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.project-card:hover {
+	border-color: var(--rose-muted);
+	box-shadow: 0 4px 12px rgba(182, 88, 101, 0.08);
+}
+
+.project-card h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.95em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--rose);
+	margin: 0 0 0.75em;
+}
+
+.project-card h4 a {
+	color: var(--rose);
+	border-bottom-color: var(--rose-muted);
+}
+
+.project-card h4 a:hover {
+	border-bottom-color: var(--rose);
+}
+
+.project-card p {
+	margin: 0;
+	font-size: 0.95em;
+	line-height: 1.6;
+	color: var(--text-secondary);
+}
+
+/* ===========================================
+   ELSEWHERE LINKS
+   =========================================== */
+
+.elsewhere-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em 1.5em;
+	margin-top: 1em;
+}
+
+.elsewhere-grid a {
+	font-family: 'IBM Plex Serif', serif;
+}
   
