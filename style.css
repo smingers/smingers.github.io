@@ -215,6 +215,13 @@ ol {
 	color: var(--text-secondary);
 }
 
+.project-card img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	margin: 0.75em 0;
+}
+
 /* ===========================================
    ELSEWHERE LINKS
    =========================================== */
