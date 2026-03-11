@@ -63,7 +63,7 @@
 	
 	<p>You can find my full resume <a href="jberman_resume.pdf">here</a>.</p>
 
-	<h3 class="cutout-heading" id="Projects">Projects</h3>
+	<h3 class="cutout-heading" id="Projects">Current Projects</h3>
 	<div class="projects-grid">
 		<div class="project-card">
 			<h4>Agent Collaborators</h4>
@@ -74,8 +74,9 @@
 			<p>The biggest risk to startup success is wasting limited resources on efforts that underperform—throwing good money after bad while missing better opportunities. This app (in private beta) teaches founders and their teams to apply principles of the world's best forecasters to their own product and business development activities, dramatically improving likelihood of success over time.</p>
 		</div>
 		<div class="project-card">
-			<h4><a href="https://healthstats.onrender.com">Health Stats Explorer</a></h4>
-			<p>Personal project and dashboard to assemble my health data from multiple sources—my Oura ring, Polar chest strap, Strava account, smart scale, etc.—so I can see progress against my fitness goals and evaluate tradeoffs in exercise and diet approaches. It also produces a standardized dataset for open queries and statistical modeling.</p>
+			<h4>Health Stats Explorer</h4>
+			<p>Personal data analytics project to assess the impact of my training and nutrition program on key health markers. Aggregates fitness and health data from multiple sources—Strava running/cycling activities, Oura Ring biometrics, and weight + gym tracking—for analysis in Jupyter notebooks with a Flask web dashboard with Chart.js visualizations. Uses multiple linear regression to model running efficiency and strength over time while controlling for confounding variables—including body weight, ambient temperature, elevation gain, and training volume—to isolate the true effect of fitness progression.</p>
+			<p>Features a modular ETL pipeline that fetches data via OAuth-authenticated APIs, and transforms it into normalized datasets for analysis. Key metrics include Grade-Adjusted Pace (GAP) calculations, efficiency factors, training load estimates, cardiovascular and health trends.</p>
 		</div>
 	</div>
 
