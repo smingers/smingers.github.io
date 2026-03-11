@@ -66,8 +66,9 @@
 	<h3 class="cutout-heading" id="Projects">Current Projects</h3>
 	<div class="projects-grid">
 		<div class="project-card">
-			<h4>Agent Collaborators</h4>
-			<p>The biggest risk I see in AI is offloading the cognitively demanding but vital tasks of reasoning and decision-making. Agents are skilled at producing plausible-sounding, professional analysis. It is always tempting to take the shortcut and ask the AI to analyze a problem and produce a report. But these activities are ultimately how we learn and even decide what it is we think. I am exploring ways to train and constrain LLMs to assist in human decision-making without short-circuiting our vital cognitive role—AI as complement to our own reasoning rather than substitute.</p>
+			<h4>AI Forecasting Agent</h4>
+			<img src="forecast.png" alt="AI Forecasting Agent ensemble prediction dashboard">
+			<p>Fully autonomous AI-powered forecasting system that competes in Metaculus prediction tournaments. Hand-built proprietary methodology to decompose questions, identify key uncertainties and reference classes, conduct agentic ReAct + RAG search. Research findings are passed to an ensemble of frontier LLMs (Claude, GPT, o3) with a two-stage prediction methodology: an "outside view" analyzing historical base rates and analogies, followed by an "inside view" incorporating current news and events. The ensemble uses cross-pollination (agents receive each other's outside-view analyses) to maximize diversity, with an optional supervisor agent that intervenes when forecasters disagree significantly.</p>
 		</div>
 		<div class="project-card">
 			<h4><a href="https://ecclesia.onrender.com">Forecasting App for Startups</a></h4>
@@ -75,7 +76,9 @@
 		</div>
 		<div class="project-card">
 			<h4>Health Stats Explorer</h4>
+			<img src="healthstats.jpeg" alt="Health Stats Explorer correlation analysis dashboard">
 			<p>Personal data analytics project to assess the impact of my training and nutrition program on key health markers. Aggregates fitness and health data from multiple sources—Strava running/cycling activities, Oura Ring biometrics, and weight + gym tracking—for analysis in Jupyter notebooks with a Flask web dashboard with Chart.js visualizations. Uses multiple linear regression to model running efficiency and strength over time while controlling for confounding variables—including body weight, ambient temperature, elevation gain, and training volume—to isolate the true effect of fitness progression.</p>
+			<br>
 			<p>Features a modular ETL pipeline that fetches data via OAuth-authenticated APIs, and transforms it into normalized datasets for analysis. Key metrics include Grade-Adjusted Pace (GAP) calculations, efficiency factors, training load estimates, cardiovascular and health trends.</p>
 		</div>
 	</div>
